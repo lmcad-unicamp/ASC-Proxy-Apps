@@ -69,7 +69,7 @@ void begin_timestep_() {
     print_timestep(PRINT_STATS, begin_time);
   }
 
-  my_exit();
+  //my_exit();
 
   current_iteration++;
 }
