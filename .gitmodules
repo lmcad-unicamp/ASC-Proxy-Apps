@@ -1,3 +1,9 @@
 [submodule "LULESH"]
 	path = LULESH
 	url = https://github.com/thaisacs/LULESH
+[submodule "Quicksilver"]
+	path = Quicksilver
+	url = https://github.com/thaisacs/Quicksilver
+[submodule "Kripke"]
+	path = Kripke
+	url = https://github.com/thaisacs/Kripke
