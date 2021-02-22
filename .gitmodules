@@ -1,0 +1,3 @@
+[submodule "LULESH"]
+	path = LULESH
+	url = https://github.com/thaisacs/LULESH
