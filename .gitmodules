@@ -7,6 +7,3 @@
 [submodule "Kripke"]
 	path = Kripke
 	url = https://github.com/thaisacs/Kripke
-[submodule "pynamic"]
-	path = pynamic
-	url = https://github.com/thaisacs/pynamic
