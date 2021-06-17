@@ -38,18 +38,18 @@ lulesh_c_app="./lulesh2.0 -i 1000 -s 120"
 # Kripke
 cd Kripke
 mpirun -n $2 --hostfile $HOSTFILE $kripke_a_app > $DATASET/$NAME-kripke-A.out 2> $DATASET/$NAME-kripke-A.err
-#mpirun -n $2 --hostfile $HOSTFILE $kripke_b_app > $DATASET/$NAME-kripke-B.out 2> $DATASET/$NAME-kripke-B.err
-#mpirun -n $2 --hostfile $HOSTFILE $kripke_c_app > $DATASET/$NAME-kripke-C.out 2> $DATASET/$NAME-kripke-C.err
+mpirun -n $2 --hostfile $HOSTFILE $kripke_b_app > $DATASET/$NAME-kripke-B.out 2> $DATASET/$NAME-kripke-B.err
+mpirun -n $2 --hostfile $HOSTFILE $kripke_c_app > $DATASET/$NAME-kripke-C.out 2> $DATASET/$NAME-kripke-C.err
 cd ..
 # Quicksilver
 cd Quicksilver
-#mpirun -n $2 --hostfile $HOSTFILE $qs_a_app > $DATASET/$NAME-Quicksilver-A.out 2> $DATASET/$NAME-kripke-A.err
-#mpirun -n $2 --hostfile $HOSTFILE $qs_b_app > $DATASET/$NAME-Quicksilver-B.out 2> $DATASET/$NAME-kripke-B.err
-#mpirun -n $2 --hostfile $HOSTFILE $qs_c_app > $DATASET/$NAME-Quicksilver-C.out 2> $DATASET/$NAME-kripke-C.err
+mpirun -n $2 --hostfile $HOSTFILE $qs_a_app > $DATASET/$NAME-Quicksilver-A.out 2> $DATASET/$NAME-Quicksilver-A.err
+mpirun -n $2 --hostfile $HOSTFILE $qs_b_app > $DATASET/$NAME-Quicksilver-B.out 2> $DATASET/$NAME-Quicksilver-B.err
+mpirun -n $2 --hostfile $HOSTFILE $qs_c_app > $DATASET/$NAME-Quicksilver-C.out 2> $DATASET/$NAME-Quicksilver-C.err
 cd ..
 # LULESH
 cd LULESH
-#mpirun -n $2 --hostfile $HOSTFILE $lulesh_a_app > $DATASET/$NAME-LULESH-A.out 2> $DATASET/$NAME-LULESH-A.err
-#mpirun -n $2 --hostfile $HOSTFILE $lulesh_b_app > $DATASET/$NAME-LULESH-B.out 2> $DATASET/$NAME-LULESH-B.err
-#mpirun -n $2 --hostfile $HOSTFILE $lulesh_c_app > $DATASET/$NAME-LULESH-C.out 2> $DATASET/$NAME-LULESH-C.err
+mpirun -n $2 --hostfile $HOSTFILE $lulesh_a_app > $DATASET/$NAME-LULESH-A.out 2> $DATASET/$NAME-LULESH-A.err
+mpirun -n $2 --hostfile $HOSTFILE $lulesh_b_app > $DATASET/$NAME-LULESH-B.out 2> $DATASET/$NAME-LULESH-B.err
+mpirun -n $2 --hostfile $HOSTFILE $lulesh_c_app > $DATASET/$NAME-LULESH-C.out 2> $DATASET/$NAME-LULESH-C.err
 cd ..
