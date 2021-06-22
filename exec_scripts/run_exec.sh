@@ -17,13 +17,13 @@ elif [[ $2 -eq 4 ]]; then
   kripke_b_app="./build/bin/kripke.exe --niter 100 --zones 26,26,26 --procs 2,2,1"
   kripke_c_app="./build/bin/kripke.exe --niter 100 --zones 38,38,38 --procs 2,2,1"
 elif [[ $2 -eq 8 ]]; then
-  kripke_a_app="./build/bin/kripke.exe --niter 100 --zones 16,16,16 --procs 4,2,1"
-  kripke_b_app="./build/bin/kripke.exe --niter 100 --zones 26,26,26 --procs 4,2,1"
-  kripke_c_app="./build/bin/kripke.exe --niter 100 --zones 38,38,38 --procs 4,2,1"
+  kripke_a_app="./build/bin/kripke.exe --niter 100 --zones 16,16,16 --procs 2,2,2"
+  kripke_b_app="./build/bin/kripke.exe --niter 100 --zones 26,26,26 --procs 2,2,2"
+  kripke_c_app="./build/bin/kripke.exe --niter 100 --zones 38,38,38 --procs 2,2,2"
 elif [[ $2 -eq 16 ]]; then
-  kripke_a_app="./build/bin/kripke.exe --niter 100 --zones 16,16,16 --procs 4,4,1"
-  kripke_b_app="./build/bin/kripke.exe --niter 100 --zones 26,26,26 --procs 4,4,1"
-  kripke_c_app="./build/bin/kripke.exe --niter 100 --zones 38,38,38 --procs 4,4,1"
+  kripke_a_app="./build/bin/kripke.exe --niter 100 --zones 16,16,16 --procs 4,2,2"
+  kripke_b_app="./build/bin/kripke.exe --niter 100 --zones 26,26,26 --procs 4,2,2"
+  kripke_c_app="./build/bin/kripke.exe --niter 100 --zones 38,38,38 --procs 4,2,2"
 elif [[ $2 -eq 32 ]]; then
   kripke_a_app="./build/bin/kripke.exe --niter 100 --zones 16,16,16 --procs 4,4,2"
   kripke_b_app="./build/bin/kripke.exe --niter 100 --zones 26,26,26 --procs 4,4,2"
@@ -44,6 +44,10 @@ elif [[ $2 -eq 512 ]]; then
   kripke_a_app="./build/bin/kripke.exe --niter 100 --zones 16,16,16 --procs 8,8,8"
   kripke_b_app="./build/bin/kripke.exe --niter 100 --zones 26,26,26 --procs 8,8,8"
   kripke_c_app="./build/bin/kripke.exe --niter 100 --zones 38,38,38 --procs 8,8,8"
+elif [[ $2 -eq 1024 ]]; then
+  kripke_a_app="./build/bin/kripke.exe --niter 100 --zones 16,16,16 --procs 16,8,8"
+  kripke_b_app="./build/bin/kripke.exe --niter 100 --zones 26,26,26 --procs 16,8,8"
+  kripke_c_app="./build/bin/kripke.exe --niter 100 --zones 38,38,38 --procs 16,8,8"
 fi
 qs_a_app="./src/qs --nSteps 100 --nParticles 100000"
 qs_b_app="./src/qs --nSteps 100 --nParticles 500000"
