@@ -48,6 +48,34 @@ elif [[ $2 -eq 1024 ]]; then
   kripke_a_app="./build/bin/kripke.exe --niter 100 --zones 16,16,16 --procs 16,8,8"
   kripke_b_app="./build/bin/kripke.exe --niter 100 --zones 26,26,26 --procs 16,8,8"
   kripke_c_app="./build/bin/kripke.exe --niter 100 --zones 38,38,38 --procs 16,8,8"
+elif [[ $2 -eq 30 ]]; then
+  kripke_a_app="./build/bin/kripke.exe --niter 100 --zones 16,16,16 --procs 5,3,2"
+  kripke_b_app="./build/bin/kripke.exe --niter 100 --zones 26,26,26 --procs 5,3,2"
+  kripke_c_app="./build/bin/kripke.exe --niter 100 --zones 38,38,38 --procs 5,3,2"
+elif [[ $2 -eq 60 ]]; then
+  kripke_a_app="./build/bin/kripke.exe --niter 100 --zones 16,16,16 --procs 5,4,3"
+  kripke_b_app="./build/bin/kripke.exe --niter 100 --zones 26,26,26 --procs 5,4,3"
+  kripke_c_app="./build/bin/kripke.exe --niter 100 --zones 38,38,38 --procs 5,4,3"
+elif [[ $2 -eq 120 ]]; then
+  kripke_a_app="./build/bin/kripke.exe --niter 100 --zones 16,16,16 --procs 6,5,4"
+  kripke_b_app="./build/bin/kripke.exe --niter 100 --zones 26,26,26 --procs 6,5,4"
+  kripke_c_app="./build/bin/kripke.exe --niter 100 --zones 38,38,38 --procs 6,5,4"
+elif [[ $2 -eq 240 ]]; then
+  kripke_a_app="./build/bin/kripke.exe --niter 100 --zones 16,16,16 --procs 8,6,5"
+  kripke_b_app="./build/bin/kripke.exe --niter 100 --zones 26,26,26 --procs 8,6,5"
+  kripke_c_app="./build/bin/kripke.exe --niter 100 --zones 38,38,38 --procs 8,6,5"
+elif [[ $2 -eq 480 ]]; then
+  kripke_a_app="./build/bin/kripke.exe --niter 100 --zones 16,16,16 --procs 10,8,6"
+  kripke_b_app="./build/bin/kripke.exe --niter 100 --zones 26,26,26 --procs 10,8,6"
+  kripke_c_app="./build/bin/kripke.exe --niter 100 --zones 38,38,38 --procs 10,8,6"
+elif [[ $2 -eq 960 ]]; then
+  kripke_a_app="./build/bin/kripke.exe --niter 100 --zones 16,16,16 --procs 12,10,8"
+  kripke_b_app="./build/bin/kripke.exe --niter 100 --zones 26,26,26 --procs 12,10,8"
+  kripke_c_app="./build/bin/kripke.exe --niter 100 --zones 38,38,38 --procs 12,10,8"
+elif [[ $2 -eq 1920 ]]; then
+  kripke_a_app="./build/bin/kripke.exe --niter 100 --zones 16,16,16 --procs 30,16,4"
+  kripke_b_app="./build/bin/kripke.exe --niter 100 --zones 26,26,26 --procs 30,16,4"
+  kripke_c_app="./build/bin/kripke.exe --niter 100 --zones 38,38,38 --procs 30,16,4"
 fi
 qs_a_app="./src/qs --nSteps 100 --nParticles 100000"
 qs_b_app="./src/qs --nSteps 100 --nParticles 500000"
